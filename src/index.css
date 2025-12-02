@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+@theme {
+  --color-accent: #ff4500;
+  --color-primary: #231f1f;
+
+  /* Define custom font if needed, or just rely on sans */
+  --font-sans: "Montana", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
