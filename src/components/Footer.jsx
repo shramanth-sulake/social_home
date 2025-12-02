@@ -10,7 +10,7 @@ const Footer = () => {
                     {/* Left: Logo & Socials */}
                     <div className="flex flex-col gap-8">
                         {/* Logo */}
-                        <h1 className="text-5xl font-bold tracking-tight">
+                        <h1 className="text-3xl md:text-5xl font-bold tracking-tight">
                             <span className="text-accent">S</span>
                             <span className="text-accent">[</span>
                             <span className="text-accent">#</span>

@@ -25,8 +25,8 @@ const HeroSection = () => {
     return (
         <section className="w-full flex flex-col bg-black">
             {/* Carousel Container */}
-            <div className="w-full px-12 py-20">
-                <div className="w-full h-[500px] md:h-[600px] relative bg-black overflow-hidden group rounded-[2rem]">
+            <div className="w-full px-4 py-8 md:px-12 md:py-20">
+                <div className="w-full h-[300px] md:h-[600px] relative bg-black overflow-hidden group rounded-[1rem] md:rounded-[2rem]">
                     {/* Slides */}
                     <div
                         className="w-full h-full flex transition-transform duration-500 ease-in-out"
@@ -74,8 +74,8 @@ const HeroSection = () => {
             </div>
 
             {/* Orange Banner Section */}
-            <div className="w-full px-12 pb-20">
-                <div className="w-full bg-accent py-8 overflow-hidden relative rounded-[2rem]">
+            <div className="w-full px-4 pb-8 md:px-12 md:pb-20">
+                <div className="w-full bg-accent py-6 md:py-8 overflow-hidden relative rounded-[1rem] md:rounded-[2rem]">
                     <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center justify-center gap-8 md:gap-16">
                         {/* 10 Years Logo Placeholder */}
                         <div className="relative border-4 border-black/20 p-4 rotate-[-2deg]">
