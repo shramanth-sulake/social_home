@@ -24,7 +24,7 @@ const Navbar = () => {
             </div>
 
             {/* Right: Reserve Button */}
-            <button className="px-5 py-2 bg-transparent border border-gray-700 rounded-full text-white text-xs font-medium uppercase tracking-wider hover:border-accent hover:text-accent transition-all duration-300">
+            <button className="hidden md:block px-5 py-2 bg-transparent border border-gray-700 rounded-full text-white text-xs font-medium uppercase tracking-wider hover:border-accent hover:text-accent transition-all duration-300">
                 Reserve a table
             </button>
         </nav>
