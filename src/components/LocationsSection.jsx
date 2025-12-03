@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { motion } from 'framer-motion';
 
 const LocationsSection = () => {
     const [activeFilter, setActiveFilter] = useState('All');
@@ -26,6 +27,21 @@ const LocationsSection = () => {
         ? locations
         : locations.filter(loc => loc.city === activeFilter);
 
+    const containerVariants = {
+        hidden: { opacity: 0 },
+        show: {
+            opacity: 1,
+            transition: {
+                staggerChildren: 0.1
+            }
+        }
+    };
+
+    const itemVariants = {
+        hidden: { opacity: 0, y: 20 },
+        show: { opacity: 1, y: 0 }
+    };
+
     return (
         <section className="w-full bg-black py-16 px-4">
             <div className="max-w-7xl mx-auto">
@@ -37,6 +53,7 @@ const LocationsSection = () => {
                     <h2 className="text-white text-4xl md:text-6xl font-bold uppercase tracking-wider mb-8" style={{ fontFamily: 'stencil, sans-serif' }}>
                         LOCATIONS
                     </h2>
+                    <div className="border-b border-white w-full max-w-2xl mx-auto mb-12"></div>
 
                     {/* Filter Buttons */}
                     <div className="flex flex-wrap justify-center gap-2 mb-12">
@@ -45,8 +62,8 @@ const LocationsSection = () => {
                                 key={city}
                                 onClick={() => setActiveFilter(city)}
                                 className={`px-4 py-1 rounded-full text-xs font-bold uppercase tracking-wider transition-colors ${activeFilter === city
-                                        ? 'bg-accent text-black'
-                                        : 'bg-[#2a2a2a] text-gray-400 hover:bg-gray-700'
+                                    ? 'bg-accent text-black'
+                                    : 'bg-[#2a2a2a] text-gray-400 hover:bg-gray-700'
                                     }`}
                             >
                                 {city}
@@ -56,9 +73,19 @@ const LocationsSection = () => {
                 </div>
 
                 {/* Locations Grid */}
-                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+                <motion.div
+                    className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6"
+                    variants={containerVariants}
+                    initial="hidden"
+                    whileInView="show"
+                    viewport={{ once: true, margin: "-100px" }}
+                >
                     {filteredLocations.map((loc, index) => (
-                        <div key={index} className="flex flex-col group cursor-pointer">
+                        <motion.div
+                            key={index}
+                            className="flex flex-col group cursor-pointer"
+                            variants={itemVariants}
+                        >
                             {/* White Logo Square */}
                             <div className="bg-white aspect-square rounded-xl flex items-center justify-center p-4 mb-4 transition-transform duration-300 group-hover:-translate-y-1">
                                 <div className="text-center">
@@ -89,9 +116,9 @@ const LocationsSection = () => {
                                     {loc.city}
                                 </p>
                             </div>
-                        </div>
+                        </motion.div>
                     ))}
-                </div>
+                </motion.div>
             </div>
         </section>
     );

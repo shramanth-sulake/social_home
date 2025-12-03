@@ -11,13 +11,15 @@ import Footer from './components/Footer';
 function App() {
   return (
     <div className="min-h-screen bg-black">
-      <Navbar />
-      <TaglineStrip />
-      <HeroSection />
-      <SocialClubSection />
-      <SocialPagesSection />
-      <LargeImageSection />
-      <LocationsSection />
+      <div className="relative z-10 bg-black">
+        <Navbar />
+        <TaglineStrip />
+        <HeroSection />
+        <SocialClubSection />
+        <SocialPagesSection />
+        <LargeImageSection />
+        <LocationsSection />
+      </div>
       <Footer />
     </div>
   );

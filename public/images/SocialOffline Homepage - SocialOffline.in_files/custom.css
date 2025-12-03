@@ -1,0 +1,52 @@
+.navbar-brand .logo-sticky{max-height:55px !important;}
+.BlogBlock .lqd-lp-header .lqd-lp-meta{display:none !important;}
+.headerHamburgerIcon{}
+.headerHamburgerIcon .nav-trigger.style-6:not(.circle) .bars{height:22px;}
+.headerHamburgerIcon .nav-trigger.style-6 .bar{margin:3px 0;width:30px;}
+/*ModLocFilter*/
+    .ModLocFilter .liquid-filter-items-inner .filter-list li{background-color: #231F1F; padding: 2px 15px; margin: 0px 7px; border-radius: 16px; min-width: 90px; text-align: center;}
+    .ModLocFilter .liquid-filter-items-inner .filter-list li.active{background-color: #FF6900; color:#fff !important;}
+    .ModLocFilter .liquid-filter-items-inner .filter-list li.active span::after{display:none;}
+    
+    .ModLocFilter .lqd-pf-column {min-height:260px;}
+    .ModLocFilter .lqd-pf-item .lqd-pf-item-inner .lqd-pf-img{background-color:#fff;}
+    .ModLocFilter .lqd-pf-item .lqd-pf-item-inner .lqd-pf-title{line-height:21px;}
+/**/
+body.single-post h1, body.single-post h2, body.single-post h3, body.single-post h4, body.single-post h5, body.single-post h6, body.single-post h7{color: var(--e-global-color-accent);}
+body.single-post .entry-meta {justify-content:space-around !important;}
+body.single-post .entry-meta .byline, body.single-post .entry-meta .cat-links{display:none !important;}
+body.single-post .related-posts article .lqd-lp-meta .lqd-lp-cat{display:none !important;}
+/*Insta*/
+    .InstaGridContainer .InstaGridInner{display: grid;grid-template-columns: repeat(5, 1fr);column-gap:10px;row-gap:10px}
+    .InstaGridContainer .InstaGridInner .InstaGridImg{width:216px;max-height:216px;overflow:hidden;border-radius:16px;}
+    .InstaGridContainer .InstaGridInner .InstaGridImg img{border-radius:16px;}
+/*Events*/
+    body.single-tribe_events .lqd-contents-wrap, body.single-tribe_events .tribe-events-pg-template, body.single-tribe_events #lqd-contents-wrap{width:100vw;max-width:unset !important;padding:0 !important;}
+    body.single-tribe_events .SingleEventMap .tec-events-elementor-event-widget__venue-details{display:none !important;}
+    body.single-tribe_events .SingleEventMap .tec-events-elementor-event-widget__venue-container, body.single-tribe_events .SingleEventMap .tec-events-elementor-event-widget__venue{padding:0 !important;margin:0 !important;}
+   
+    body.single-tribe_events .SingleEventVenue{width:100%;}
+    body.single-tribe_events .SingleEventVenue a, body.single-tribe_events .SingleEventVenue .tec-events-elementor-event-widget__venue .tec-events-elementor-event-widget__venue-details .tec-events-elementor-event-widget__venue-phone-link{color: #ffffff !important;}
+    body.single-tribe_events .SingleEventVenue .tec-events-elementor-event-widget__venue-container{display:block !important;width: 100% !important;max-width:unset !important;border:0;}
+    body.single-tribe_events .SingleEventVenue .tec-events-elementor-event-widget__venue-details{padding-top:0px !important;}
+    body.single-tribe_events .SingleEventVenue .tec-events-elementor-event-widget__venue-map{display:none !important;}
+    body.single-tribe_events .SingleEventVenue .tec-events-elementor-event-widget__venue-name, body.single-tribe_events .SingleEventVenue .tec-events-elementor-event-widget__venue-phone-header{margin-bottom:0 !important;}
+    
+    body.single-tribe_events .SingleEventHeadVenue .tec-events-elementor-event-widget__venue-container, .EventBlockVenue .tec-events-elementor-event-widget__venue-container{margin:0 !important; padding:0 !important;border:0 !important;max-width:unset !important;width:100% !important;display:block !important;}
+    body.single-tribe_events .SingleEventHeadVenue .tec-events-elementor-event-widget__venue-map, .EventBlockVenue .tec-events-elementor-event-widget__venue-map{display:none !important;}
+    body.single-tribe_events .SingleEventHeadVenue .tec-events-elementor-event-widget__venue-name, .EventBlockVenue .tec-events-elementor-event-widget__venue-name{margin:0 !important;padding:0 !important;}
+    body.single-tribe_events .SingleEventHeadVenue .tec-events-elementor-event-widget__venue-name::before, .EventBlockVenue .tec-events-elementor-event-widget__venue-name::before{content:"@";} 
+    .EventBlockVenue .tec-events-elementor-event-widget__venue-details{padding:0 !important;}
+    
+/*social club*/
+    .rewardsTable th{width:20% !important;}
+
+@media screen and (max-width : 760px) and (orientation : portrait) {
+ .ModLocFilter .lqd-pf-column{width:30%;min-height:230px;padding-inline-end:0px !important;} 
+}
+ [data-elementor-device-mode="tablet"] .lqd-mobile-sec{display:none !important;}
+
+/*Mobile nav*/
+    #mobile-primary-nav{height:100vh;}
+    #mobile-primary-nav, #mobile-primary-nav .menu-item a{text-transform:uppercase;font-size:18px;}
+    

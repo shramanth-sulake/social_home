@@ -14,13 +14,7 @@ const Navbar = () => {
 
             {/* Center: Logo */}
             <div className="absolute left-1/2 transform -translate-x-1/2">
-                <h1 className="text-3xl md:text-5xl font-bold tracking-tight">
-                    <span className="text-accent">S</span>
-                    <span className="text-accent">[</span>
-                    <span className="text-accent">#</span>
-                    <span className="text-accent">]</span>
-                    <span className="text-accent">CIAL</span>
-                </h1>
+                <img src="/images/social-logo.png" alt="SOCIAL" className="h-8 md:h-12" />
             </div>
 
             {/* Right: Reserve Button */}
