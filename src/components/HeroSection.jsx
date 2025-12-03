@@ -92,7 +92,7 @@ const HeroSection = () => {
                             <img
                                 src={slides[imageIndex].image}
                                 alt={slides[imageIndex].alt}
-                                className="w-full h-full object-cover pointer-events-none"
+                                className="w-full h-full object-contain md:object-cover pointer-events-none"
                             />
                             {/* Overlay gradient for better text visibility if needed */}
                             <div className="absolute inset-0 bg-black/10"></div>

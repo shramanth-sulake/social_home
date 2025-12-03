@@ -93,7 +93,7 @@ const LargeImageSection = () => {
                         <img
                             src={images[imageIndex]}
                             alt={`Social Slide ${imageIndex + 1}`}
-                            className="w-full h-full object-cover pointer-events-none"
+                            className="w-full h-full object-contain md:object-cover pointer-events-none"
                         />
                     </motion.div>
                 </AnimatePresence>
